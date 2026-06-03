@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Gallery 📷</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="hearts-layer"></div>
+<audio id="bg-audio" loop><source src="audio/romance.mp3" type="audio/mpeg" /></audio>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">Our Story 🌹</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="story.html">Story</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li>
+    <li><a href="final.html">Forever</a></li>
+  </ul>
+  <button class="music-btn" id="music-btn">🔇</button>
+</nav>
+
+<!-- Gallery Hero -->
+<section class="story-hero">
+  <span class="section-eyebrow">✦ our album ✦</span>
+  <h1 class="page-title">Memory Wall</h1>
+  <p class="page-subtitle">Every photo holds a thousand feelings. These are ours.</p>
+</section>
+
+<!-- Gallery Grid -->
+<section style="padding-top:2rem; background:#fff8f0;">
+  <div class="gallery-grid" id="gallery-grid">
+
+    <div class="gallery-item" data-label="First smile">
+      <div class="gallery-placeholder">🌹</div>
+      <div class="gallery-overlay"><span>First Smile ❤️</span></div>
+    </div>
+
+    <div class="gallery-item" data-label="Our place">
+      <div class="gallery-placeholder">🌸</div>
+      <div class="gallery-overlay"><span>Our Place 🌸</span></div>
+    </div>
+
+    <div class="gallery-item" data-label="Golden hour">
+      <div class="gallery-placeholder">🌇</div>
+      <div class="gallery-overlay"><span>Golden Hour ✨</span></div>
+    </div>
+
+    <div class="gallery-item" data-label="Laughter">
+      <div class="gallery-placeholder">😂</div>
+      <div class="gallery-overlay"><span>That Laugh 💕</span></div>
+    </div>
+
+    <div class="gallery-item" data-label="Night out">
+      <div class="gallery-placeholder">🌙</div>
+      <div class="gallery-overlay"><span>Night Out 🌙</span></div>
+    </div>
+
+    <div class="gallery-item" data-label="Cozy day">
+      <div class="gallery-placeholder">☕</div>
+      <div class="gallery-overlay"><span>Cozy Day ☕</span></div>
+    </div>
+
+    <div class="gallery-item" data-label="Adventure">
+      <div class="gallery-placeholder">🗺️</div>
+      <div class="gallery-overlay"><span>Adventure 🗺️</span></div>
+    </div>
+
+    <div class="gallery-item" data-label="Just us">
+      <div class="gallery-placeholder">💝</div>
+      <div class="gallery-overlay"><span>Just Us 💝</span></div>
+    </div>
+
+    <div class="gallery-item" data-label="Anniversary">
+      <div class="gallery-placeholder">🎉</div>
+      <div class="gallery-overlay"><span>Celebration 🎉</span></div>
+    </div>
+
+    <div class="gallery-item" data-label="Sunset">
+      <div class="gallery-placeholder">🌅</div>
+      <div class="gallery-overlay"><span>Our Sunset 🌅</span></div>
+    </div>
+
+    <div class="gallery-item" data-label="Dancing">
+      <div class="gallery-placeholder">💃</div>
+      <div class="gallery-overlay"><span>Dancing 💃</span></div>
+    </div>
+
+    <div class="gallery-item" data-label="Forever">
+      <div class="gallery-placeholder">♾️</div>
+      <div class="gallery-overlay"><span>Forever ♾️</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Scratch Card Section -->
+<section class="scratch-section">
+  <span class="section-eyebrow">✦ hidden surprises ✦</span>
+  <h2 class="section-title fade-in">Scratch to Reveal</h2>
+  <div class="section-divider"></div>
+  <p class="fade-in" style="font-family:'Cormorant Garamond',serif; font-style:italic; color:#7a3a4a; font-size:1.1rem; margin-bottom:1rem;">These special memories are hidden just for you. Scratch to uncover them 💕</p>
+
+  <div class="scratch-grid">
+
+    <!-- Scratch Card 1 -->
+    <div>
+      <div class="scratch-card-wrap">
+        <div class="scratch-reveal" style="width:240px; height:240px; background:linear-gradient(135deg,#fce4ec,#f9d0d9); display:flex; align-items:center; justify-content:center; font-size:5rem;">
+          💕
+        </div>
+        <canvas class="scratch-canvas" style="width:240px; height:240px;"></canvas>
+      </div>
+      <p class="scratch-hint">Scratch me! ✨</p>
+    </div>
+
+    <!-- Scratch Card 2 -->
+    <div>
+      <div class="scratch-card-wrap">
+        <div class="scratch-reveal" style="width:240px; height:240px; background:linear-gradient(135deg,#fff0f3,#fce4ec); display:flex; align-items:center; justify-content:center; font-size:5rem;">
+          🌹
+        </div>
+        <canvas class="scratch-canvas" style="width:240px; height:240px;"></canvas>
+      </div>
+      <p class="scratch-hint">Scratch me! 🌹</p>
+    </div>
+
+    <!-- Scratch Card 3 -->
+    <div>
+      <div class="scratch-card-wrap">
+        <div class="scratch-reveal" style="width:240px; height:240px; background:linear-gradient(135deg,#ffe4f0,#ffd6e8); display:flex; align-items:center; justify-content:center; font-size:5rem;">
+          ✨
+        </div>
+        <canvas class="scratch-canvas" style="width:240px; height:240px;"></canvas>
+      </div>
+      <p class="scratch-hint">Scratch me! 💖</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal" id="gallery-modal">
+  <div class="modal-content">
+    <img id="modal-img" class="modal-img" src="" alt="" />
+    <button class="modal-close" id="modal-close">✕</button>
+  </div>
+</div>
+
+<!-- CTA -->
+<section style="padding:4rem 2rem; text-align:center; background:linear-gradient(135deg,#c0395a,#3d0a1e);">
+  <h2 class="fade-in" style="font-family:'Dancing Script',cursive; font-size:2.5rem; color:white; margin-bottom:1rem;">One last surprise awaits...</h2>
+  <a href="final.html" class="fade-in" style="display:inline-flex; align-items:center; gap:0.5rem; background:white; color:#c0395a; padding:1rem 2.5rem; border-radius:50px; font-family:'Lato',sans-serif; font-size:0.85rem; letter-spacing:2px; text-transform:uppercase; text-decoration:none; transition:all 0.3s; font-weight:700;">
+    Open Final Letter 💌
+  </a>
+</section>
+
+<footer>Made with 🌹 & ❤️ — Our Story, Forever</footer>
+
+<script src="js/main.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/scratch.js"></script>
+</body>
+</html>

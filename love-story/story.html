@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Story — Timeline 🌹</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="hearts-layer"></div>
+<audio id="bg-audio" loop><source src="audio/romance.mp3" type="audio/mpeg" /></audio>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">Our Story 🌹</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="story.html" class="active">Story</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="final.html">Forever</a></li>
+  </ul>
+  <button class="music-btn" id="music-btn">🔇</button>
+</nav>
+
+<!-- Story Hero -->
+<section class="story-hero">
+  <span class="section-eyebrow">✦ chapter by chapter ✦</span>
+  <h1 class="page-title">Our Timeline</h1>
+  <p class="page-subtitle">Every love story is made of small, perfect moments. Here are ours.</p>
+</section>
+
+<!-- Rotating Quote -->
+<div style="padding:2.5rem; text-align:center; background:white; border-bottom:1px solid rgba(232,99,122,0.1);">
+  <p id="rotating-quote" style="font-family:'Playfair Display',serif; font-style:italic; font-size:1.2rem; color:#7a3a4a; transition:opacity 0.6s,transform 0.6s; max-width:600px; margin:0 auto;"></p>
+</div>
+
+<!-- Parallax Section -->
+<div class="parallax-section" style="min-height:200px; margin:0;">
+  <div class="parallax-bg"></div>
+  <div class="parallax-content">
+    <span style="font-size:3rem;">🌹</span>
+    <p style="font-family:'Dancing Script',cursive; font-size:2rem; color:#c0395a; margin-top:0.5rem;">Where it all began...</p>
+  </div>
+</div>
+
+<!-- Timeline -->
+<div class="timeline">
+
+  <!-- Item 1 -->
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content slide-left">
+      <div class="polaroid">
+        <div class="polaroid-placeholder">🌸</div>
+        <p class="polaroid-caption">The First Hello</p>
+      </div>
+    </div>
+    <div class="timeline-text slide-right" style="padding-top:2rem;">
+      <p class="timeline-date">Chapter One</p>
+      <h3 class="timeline-heading">The Moment We Met</h3>
+      <p class="timeline-body">
+        They say some meetings are written in the stars. I didn't believe that — until the day I met you. One look, one smile, and something shifted inside me. The world got a little bit brighter.
+      </p>
+    </div>
+  </div>
+
+  <!-- Sticky Note Break -->
+  <div style="display:flex; justify-content:center; margin:-2rem 0 3rem; position:relative; z-index:5;">
+    <div class="sticky-note zoom-in">
+      "I knew from the very first moment that you were different. Something in my heart just knew."
+    </div>
+  </div>
+
+  <!-- Item 2 -->
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content slide-right">
+      <div class="polaroid">
+        <div class="polaroid-placeholder">☕</div>
+        <p class="polaroid-caption">Our First Date</p>
+      </div>
+    </div>
+    <div class="timeline-text slide-left" style="padding-top:2rem;">
+      <p class="timeline-date">Chapter Two</p>
+      <h3 class="timeline-heading">Our First Adventure</h3>
+      <p class="timeline-body">
+        Coffee turned into hours of conversation that felt like minutes. We talked about everything and nothing. I didn't want it to end. I still don't.
+      </p>
+    </div>
+  </div>
+
+  <!-- Item 3 -->
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content slide-left">
+      <div class="polaroid">
+        <div class="polaroid-placeholder">🌙</div>
+        <p class="polaroid-caption">Late Night Talks</p>
+      </div>
+    </div>
+    <div class="timeline-text slide-right" style="padding-top:2rem;">
+      <p class="timeline-date">Chapter Three</p>
+      <h3 class="timeline-heading">Falling Deeper</h3>
+      <p class="timeline-body">
+        Late nights, long calls, laughing about silly things. I realized then that you weren't just someone I wanted around — you were someone I needed.
+      </p>
+    </div>
+  </div>
+
+  <!-- Typewriter Quote Section -->
+  <div class="quote-section fade-in" style="margin:2rem -2rem; border-radius:0;">
+    <p class="quote-text">
+      <span id="typewriter-text" data-typewriter="You make me feel like every day is a gift, and every moment with you is worth living twice."></span>
+    </p>
+    <p class="quote-author">— written for you</p>
+  </div>
+
+  <!-- Item 4 -->
+  <div class="timeline-item" style="margin-top:3rem;">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content slide-right">
+      <div class="polaroid">
+        <div class="polaroid-placeholder">🎉</div>
+        <p class="polaroid-caption">Special Moments</p>
+      </div>
+    </div>
+    <div class="timeline-text slide-left" style="padding-top:2rem;">
+      <p class="timeline-date">Chapter Four</p>
+      <h3 class="timeline-heading">Making Memories</h3>
+      <p class="timeline-body">
+        Every place becomes special when you're there. Every ordinary day becomes extraordinary. That's what you do — you make life beautiful.
+      </p>
+    </div>
+  </div>
+
+  <!-- Item 5 -->
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content slide-left">
+      <div class="polaroid">
+        <div class="polaroid-placeholder">❤️</div>
+        <p class="polaroid-caption">Us, Always</p>
+      </div>
+    </div>
+    <div class="timeline-text slide-right" style="padding-top:2rem;">
+      <p class="timeline-date">Chapter Five — & Beyond</p>
+      <h3 class="timeline-heading">Forever in Progress</h3>
+      <p class="timeline-body">
+        Our story isn't finished. It's being written every single day — in every hug, every smile, every quiet moment we share. And I can't wait for every chapter still to come.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<!-- Two sticky notes at bottom -->
+<div style="display:flex; gap:2rem; justify-content:center; flex-wrap:wrap; padding:0 2rem 5rem;">
+  <div class="sticky-note zoom-in">
+    📌 Remember the first time we laughed until we cried? I want a million more of those.
+  </div>
+  <div class="sticky-note zoom-in" style="background:#ffd6e0; transform:rotate(2deg);">
+    📌 Every day with you is my new favorite day. Even the ordinary ones.
+  </div>
+</div>
+
+<!-- CTA -->
+<section style="padding:4rem 2rem; text-align:center; background:linear-gradient(160deg,#fff0f3,#fce4ec);">
+  <h2 class="fade-in" style="font-family:'Dancing Script',cursive; font-size:2.5rem; color:#c0395a; margin-bottom:1rem;">Want to see our memories?</h2>
+  <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;" class="fade-in">
+    <a href="gallery.html" class="btn-primary">View Gallery 📷</a>
+    <a href="final.html" class="btn-secondary">Read Final Message 💌</a>
+  </div>
+</section>
+
+<footer>Made with 🌹 & ❤️ — Our Story, Forever</footer>
+
+<script src="js/main.js"></script>
+<script src="js/story.js"></script>
+</body>
+</html>

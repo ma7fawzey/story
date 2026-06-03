@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forever — Our Story 💌</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<canvas id="confetti-canvas"></canvas>
+<div class="hearts-layer"></div>
+<audio id="bg-audio" loop><source src="audio/romance.mp3" type="audio/mpeg" /></audio>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">Our Story 🌹</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="story.html">Story</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="final.html" class="active">Forever</a></li>
+  </ul>
+  <button class="music-btn" id="music-btn">🔇</button>
+</nav>
+
+<!-- Final Page -->
+<main class="final-page">
+
+  <span class="final-heart">❤️</span>
+
+  <span class="section-eyebrow">✦ a message from my heart ✦</span>
+  <h1 class="final-title">You are my<br>everything.</h1>
+
+  <div class="section-divider"></div>
+
+  <div class="glass-card" style="max-width:600px; margin:0 auto 2.5rem;">
+    <p class="final-message" id="final-typewriter"></p>
+  </div>
+
+  <!-- Floating quote cards -->
+  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content:center; margin-bottom:3rem; max-width:700px;">
+    <div class="glass-card zoom-in" style="flex:1; min-width:180px; text-align:center;">
+      <div style="font-size:2rem; margin-bottom:0.5rem;">💕</div>
+      <p style="font-family:'Dancing Script',cursive; font-size:1rem; color:#7a3a4a;">"Every day is better because you're in it."</p>
+    </div>
+    <div class="glass-card zoom-in" style="flex:1; min-width:180px; text-align:center;">
+      <div style="font-size:2rem; margin-bottom:0.5rem;">🌹</div>
+      <p style="font-family:'Dancing Script',cursive; font-size:1rem; color:#7a3a4a;">"My heart found its home the day it found you."</p>
+    </div>
+    <div class="glass-card zoom-in" style="flex:1; min-width:180px; text-align:center;">
+      <div style="font-size:2rem; margin-bottom:0.5rem;">✨</div>
+      <p style="font-family:'Dancing Script',cursive; font-size:1rem; color:#7a3a4a;">"You are my favorite story ever told."</p>
+    </div>
+  </div>
+
+  <div class="btn-group fade-in">
+    <a href="index.html" class="btn-primary">Replay Our Story 🔄</a>
+    <a href="story.html" class="btn-secondary">Read Again 📖</a>
+  </div>
+
+  <!-- Signature -->
+  <div style="margin-top:4rem; text-align:center;">
+    <p style="font-family:'Dancing Script',cursive; font-size:2.5rem; color:#c0395a;">With all my love,</p>
+    <p style="font-family:'Dancing Script',cursive; font-size:3.5rem; color:#e8637a; text-shadow:0 0 30px rgba(232,99,122,0.3);">Always yours 🌹</p>
+    <div style="margin-top:1.5rem; font-size:2rem; animation:heartBeat 1.5s ease-in-out infinite;">❤️🌹❤️</div>
+  </div>
+
+</main>
+
+<footer>Made with 🌹 & ❤️ — Our Story, Forever</footer>
+
+<script src="js/main.js"></script>
+<script src="js/confetti.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const el = document.getElementById('final-typewriter');
+  if (!el) return;
+
+  const messages = [
+    "From the very first moment I saw you, something inside me changed. I didn't know it then, but that was the day my story really began — the one worth telling.",
+    "\n\nYou are everything I didn't know I was looking for. You are home. You are warmth. You are the reason I believe in magic.",
+    "\n\nI want you to know — no matter what tomorrow brings — I am grateful for every single second I get to spend with you. Every laugh, every quiet moment, every glance that says more than words ever could.",
+    "\n\nThis is not just a website. It's a love letter. It's a promise. And it's just the beginning of everything I want to give you. 💕"
+  ];
+
+  const fullText = messages.join('');
+  let i = 0;
+  el.style.whiteSpace = 'pre-line';
+
+  function type() {
+    if (i < fullText.length) {
+      el.textContent += fullText[i++];
+      setTimeout(type, 35 + Math.random() * 20);
+    }
+  }
+  setTimeout(type, 800);
+});
+</script>
+</body>
+</html>
